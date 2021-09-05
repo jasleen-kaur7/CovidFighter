@@ -143,7 +143,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <b>Measurement:</b>
+                    <b>Measurement:::</b>
                     <table style="border: 2px solid black;width:100%;" >
                         <thead class="btn-info">
                             <tr><th > Task </th>
@@ -246,7 +246,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    Measurement
+                    <b>Measurement:</b>
                     <table style="border: 2px solid black;width:100%;" >
                         <thead class="btn-info">
                             <tr><th > Task </th>
@@ -1545,7 +1545,7 @@
             
         </section>
         
-        
+        <br><br>
 <footer class="section" id="foot">
     <div class="container ">
       <div class="row row-30">
@@ -1555,23 +1555,23 @@
            </div>
         </div>
         <div class="col-md-4">
-            <h4>Contacts</h4>
+            <h4>Contacts:</h4>
             <dl class="contact-list">
               <dt>Helpline Email ID:</dt>
               <dd><a href="mailto:#">ncov2019@gov.in</a></dd>
             </dl>
             <dl class="contact-list">
               <dt>Emergency Ambulance Service:</dt>
-              <dd>108</dd>
+              <dd><a href="tel:#">108</a></dd>
             </dl>
             <dl class="contact-list">
               <dt>Covid Helpline Number:</dt>
-              <dd><a href="tel:#">+91-11-23978046</a> <span>
+              <dd><a href="tel:#">+91-11-23978046</a>
               </dd>
             </dl>
           </div>
         <div class="col-md-4 col-xl-3">
-          <h4> Useful Links</h4>
+          <h4> Useful Links:</h4>
           <ul class="nav-list">
             <li><a href="https://www.mohfw.gov.in/">Cases in India</a></li>
             <li><a href="https://gethelpnow.in/?gclid=Cj0KCQjw1dGJBhD4ARIsANb6Odn2KxtAJizNr1jklx6QAP9NQVGAfuCyfUYY6fSC9yXG6oxeNFQkyf0aAt9FEALw_wcB">Ambulance Service</a></li>
@@ -1590,6 +1590,7 @@
         function openDay(evt, cityName) {
             //show lpoader
             document.getElementById("loaderID").style.display = "block";
+            
                 var i, tabcontent, tablinks;
                 tabcontent = document.getElementsByClassName("tabcontent");
                 for (i = 0; i < tabcontent.length; i++) {
@@ -1603,7 +1604,7 @@
                 evt.currentTarget.className += " active";
                 
             //hide loader
-            setTimeout(() => { document.getElementById("loaderID").style.display = "none"},2000);
+            setTimeout(() => { document.getElementById("loaderID").style.display = "none"},500);
             };  
             document.getElementById("defaultOpen").click();
            
