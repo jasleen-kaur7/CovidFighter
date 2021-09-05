@@ -1,0 +1,105 @@
+header {
+    overflow: hidden;
+    background-color: #ddd;
+    padding: 20px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: #46b8da;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+      margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border: #46b8da;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #46b8da;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: #46b8da;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+    display: inline-block;
+    margin: 15px;
+    color: white;
+
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a.logo {
+      float: left;
+      text-align: left;
+      font-size: 23px;
+    }
+    .header-right {
+      float: right;
+      display: inline-block;
+    }
+  }
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;width: 100%;}
+  img {vertical-align: middle;}
+
+  .btn{
+      width: 100px;
+      height: 50px;
+  }
+
+
+ 
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
