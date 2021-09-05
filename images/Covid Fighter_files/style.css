@@ -130,11 +130,3 @@ text-align: center;
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-#foot{
-  background-color: #46b8da;
-  color: white;
-}
-#foot a{
-  color: white;
-}
