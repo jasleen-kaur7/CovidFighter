@@ -39,7 +39,6 @@ header {
   
   /* Float the link section to the right */
   .header-right {
-    float: right;
     display: inline-block;
     margin: 15px;
     color: white;
@@ -54,8 +53,8 @@ header {
       font-size: 23px;
     }
     .header-right {
-      float: right;
       display: inline-block;
+      float: right;
     }
   }
   * {box-sizing: border-box;}
@@ -141,4 +140,84 @@ text-align: center;
 
 ul > li{
   text-decoration: underline;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columnImg {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .columnImg img {
+      height: 200px;
+    }
+    
+    
+}
+.container{
+  width:90% !important;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+      
+  .text {font-size: 11px}
+  #ourprod{font-size: 11px}
+  #Gallery{font-size: 11px}
+  .columnImg {
+    flex: 33%;
+    max-width: 33%;
+  }
+  .columnImg img {
+      height: 100px;
+    }
+}
+
+.tbl{
+  width : 100% !important;
+  table-layout: fixed;
+}
+
+html, body{
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+
+.columnButton {
+  float: left;
+  width :13%;
+  margin : 5px;
+}
+
+/* Clear floats after the columns */
+.rowButton:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .columnButton {
+    width: 20%;
+    margin : 5px;
+  }
+  .btn{
+    width: 100%;;
+  }
+  
+  .rowButton:after {
+      margin: 10px 10px 0px 10px;
+  }
+}
+
+.footer{
+  margin-top: 20px;
+  padding: 15px;
+  width:100%;
+  position:absolute;  
+  left:0;
 }
