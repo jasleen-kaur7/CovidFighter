@@ -39,6 +39,7 @@ header {
   
   /* Float the link section to the right */
   .header-right {
+    float: right;
     display: inline-block;
     margin: 15px;
     color: white;
